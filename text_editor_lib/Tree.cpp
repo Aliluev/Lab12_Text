@@ -302,7 +302,7 @@ void TTree::Initialization(const int size)
       end->next_level = (TTree*)(&memory[(i + 1) * sizeof(TTree)]);
       end = end->next_level;
     }
-  }
+  } else throw "-1";
 }
 
 void TTree::GarbageCollector()
